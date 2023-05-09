@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/post.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- TODO: Include Font Awesome file here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="logo-button">
+            <button class="button" type="button" data-bs-toggle="modal" data-bs-target="#myModal">Sign Up</button>
+            <button class="button" type="button" data-bs-toggle="modal" data-bs-target="#myModal2">Sign
+                In</button>
+        </div>
+        <p class="logo">ScriBBler</p>
+        <p class="logo-title">Explore, Imagine, Create</p>
+    </header>
+    <!-- header end -->
+
+    <!-- page body -->
+    <div class="containerofpost">
+        <div id="postPage">
+            <div id="titleBox">
+                <p id="pageMainTitle">Everything you should know about 'module' & 'require' in Node.js</p>
+                <center><input type="text" id="titleArea" ></input></center>
+            </div>
+            <div id="middlepartofthepost">
+                <span>Srishti Gupta</span>
+                <button id="editButton" onclick="editThePage()">Edit <i id="saveButton" class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+            </div>
+            <div id="contentBOx">
+                <textarea  name="" id="contentTextArea"></textarea>
+                <p id="pageMainContent">
+                    Node ja treats each JavaScopt file as a separate module. For instance, if you have a file containing
+                    some
+                    code and this file is aed xyz, then this file a treated as a module in Node, and you can say that
+                    you've
+                    created a module named nye Let's take an example to understand this better. You have a file named
+                    calea
+                    which cans of the logic for calculating themes & thr circumference of a circle of a given rados. You
+                    can
+                    call circle.js file a module named circle. You might be wondering why is there a need to have
+                    multiple
+                    modules? You could have just men all the code m a single module. Well, its very important to write
+                    modular
+                    code. By mohl 1 man to say that your code dould be dependent and should be loosely couples. Imagine
+                    that
+                    there's a large application md you have all your code written in just one place, just coe file. Too
+                    messy,
+                    right? How does the code written inside a module run? Before executing the code women side a module,
+                    Node
+                    takes the entire code and encloses it within a function wrapper. The synax of this foection wrapper
+                    is.
+                    The
+                    entire code wettes inde a module private to the module, unless explicitly stated (exported;
+                    otherwise.
+                    This
+                    is the most significant attage of having modules in Nodejs. Even if you define a global variable in
+                    mod
+                    ng
+                    valer or cost keywords the variables are scoped locally to the module rather than being scoped
+                    globally.
+                    This happens because each module las a function wrapper of its own and the code written made on
+                    function
+                    is
+                    local to that function au camet be accessed this function Imagine that there are two modules A and
+                    B.
+                    The
+                    code written made the module A enclosed with the faction wrapper corresponding to the module A
+                    Sandlar
+                    tang
+                    luppens with the code written inside the module D. Because the code pertaining to both the modules
+                    enclosed
+                    within different functions, these functions will not be able to access the code of each other.
+                    (Remember
+                    each tinction in JavaScript list on local scope?) This is the reason why module A cannot access the
+                    code
+                    written inside module B and vice-verse. The five parameters-experts require module frame available
+                    inside
+                    each module in Nade Though these parameters are global to the code within a module yet they are
+                    local to
+                    the
+                    module (because of the function wrapper as explained above). These parameters provide valuable
+                    information
+                    related to a module. Let's see the circle module, which you looked at earlier. There are three
+                    constructs
+                    defined in this module a costat vanable PI, a function named calculateArea and another function
+                    named
+                    calculateCircumference. An important point to keep in mind is that all these constructs are private
+                    to
+                    the
+                    circle module by default. It means that you cannot use these constructs in any other module unless
+                    explicatly specified. So, the question that are now is how do you specify something in a module that
+                    can
+                    be
+                    used by some other module? This is when the module & require parameters of the fonction wrapper are
+                    helpful.
+                    Let's discuss these two parameters in this article module The module parameter (rather a keywood a
+                    module in
+                    Node) refer to the object sepresenting the current module exports is a key of the module object, the
+                    corresponding value of which is an object. The default value of module exports object is (empty
+                    object).
+                    You
+                    can check the by logging the value of module keyword inside any module. Let's check what is the
+                    value of
+                    module permiter made the circle module. Notice that there is a console logimodule); statement at the
+                    end
+                    of
+                    the code in the file given above. When you see the output, it will log the module object, which has
+                    a
+                    key
+                    named exports and the sale components key (empty ect) Now, what does the module exports abject do?
+                    Well,
+                    tud
+                    fe define staff that can be exported by a module Whatever is exported from a module can, in turn, be
+                    made
+                    available to other modules. Exporting something is quite easy. You just need to add it to the module
+                    exports
+                    object. There are three ways to add something to the module experts object to be exported. Let's do
+                    these
+                    methods one by one
+                </p>
+            </div>
+            <div class="likeandcommentfunctionalities">
+                <div class="like">
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true" onclick="showNumOfLike()">Like</i>
+                        <div id="showLike">
+                            <p>Be the first one to like this!</p>
+                        </div>
+                </div>
+                <div class="comment" >
+                    <textarea  value = "" name="" id="textComment" cols="30" rows="10" placeholder="Leave a comment"></textarea><br>
+                    <button id="commentbutton" onclick="addComment(textComment)" >Comment</button>
+                </div>
+                <div class="showComment">
+                    <p>All Comments</p>
+                    <div class="showCommentHere">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- page end -->
+    <section>
+        <section>
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Get Started</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form action="">
+                                <label for="name">Name</label><br>
+                                <input type="text" id="name" placeholder="Enter your name" required><br>
+                                <label for="userName">Username</label><br>
+                                <input type="text" id="userName" placeholder="Enter your udername" required><br>
+                                <label for="password">Password</label><br>
+                                <input type="password" id="password" placeholder="Enter your password" required><br>
+                                <label for="ConfirmPassword">Confirm Password</label><br>
+                                <input type="password" id="ConfirmPassword" placeholder="Re-Enter your password"
+                                    required><br>
+                                <button type="submit" onclick="submitSignInForm(name,userName,password,ConfirmPassword)"
+                                    id="buttonSubmitSignUpForm">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- for sign up -->
+            <div class="modal" id="myModal2">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Welcome Back!</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form action="">
+                                <label for="userNameExist">Username</label><br>
+                                <input type="text" id="userNameExist" placeholder="Enter your username" required><br>
+                                <label for="passwordExist">Password</label><br>
+                                <input type="text" id="passwordExist" placeholder="Enter your password" required><br>
+                                <button type="submit" id="submitSignIn"
+                                    onclick="submitSignInForm(userNameExist,passwordExist)">Sign
+                                    in</button>
+                                <p id="returnToSignup"><b>Not a member ? <a data-bs-toggle="modal" data-bs-target="#myModal">Sign up</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="../scripts/post.js"></script>
+</body>
+
+</html>

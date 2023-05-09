@@ -1,0 +1,167 @@
+/* this code is for  sign in and sign  */
+label {
+    margin: 10px 0px 6px 0px;
+}
+
+input {
+    width: 465px;
+    height: 42px;
+    padding: 15px;
+}
+
+#buttonSubmitSignUpForm {
+    color: white;
+    background-color: green;
+    margin: 25px 0px;
+    width: 465px;
+    height: 42px;
+}
+
+#submitSignIn {
+    color: white;
+    background-color: green;
+    margin: 25px 0px;
+    width: 465px;
+    height: 42px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffeedd;
+}
+
+.logo-button {
+    float: right;
+
+}
+
+.logo {
+    font-family: 'Montez', cursive;
+    font-size: 45px;
+    padding: 10px 10px 0px 10px;
+    color: blue;
+}
+
+.logo-title {
+    font-family: 'Ubuntu Mono', cursive;
+    padding: 0px 10px;
+    color: rgb(26, 26, 147);
+}
+
+.button {
+    width: 85px;
+    height: 40px;
+    margin: 10px 4px;
+    background-color: blue;
+    color: white;
+}
+#returnToSignup a {
+    color: blue;
+}
+/* end of the sign and login in code */
+
+
+
+/* page post content */
+.containerofpost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#postPage {
+    width: 90vw;
+    height: 100vh;
+
+}
+
+#titleBox {
+    display: flex;
+    justify-content: center;
+}
+
+#titleArea{
+    display: none;
+    width: 33vw;
+}
+
+#pageMainTitle {
+    font-weight: bolder;
+}
+
+
+/* middle part of the post  */
+#middlepartofthepost {
+    margin: 20px 0px;
+}
+
+#middlepartofthepost span {
+    font-weight: bold;
+}
+
+#middlepartofthepost button {
+    background-color: crimson;
+    color: white;
+    border: none;
+    height: 30px;
+    width: 60px;
+    float: right;
+
+}
+
+/* textarea code to small the text area font size  */
+#contentBOx textarea{
+    font-size: 11px;
+}
+
+/* page content here  */
+#pageMainContent {
+    font-size: 11px;
+}
+
+#contentTextArea{
+    display: none;
+    width: 90vw;
+    height: 40vh;
+}
+
+/* like and comment functionlity here  */
+.like i{
+    background-color: crimson;
+    color: white;
+    border: none;
+    height: 36px;
+    width: 70px;
+    padding: 10px;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+#showLike{
+    margin: 10px 0px;
+}
+.comment textarea{
+     width: 40vw;
+     height: 10vh;
+}
+
+
+/* show comment functionality here  */
+#commentbutton{
+    background-color: crimson;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+.commentme{
+    width: 40wh;
+    height: 10vh;
+    border: 12px solid rgb(236, 232, 232);
+    padding: 10px;
+}

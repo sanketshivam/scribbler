@@ -1,0 +1,202 @@
+
+        /* this code is for  sign in and sign  */
+        label {
+            margin: 10px 0px 6px 0px;
+        }
+
+        input {
+            width: 465px;
+            height: 42px;
+            padding: 15px;
+        }
+        #returnToSignup a {
+            color: blue;
+        }
+        #buttonSubmitSignUpForm {
+            color: white;
+            background-color: green;
+            margin: 25px 0px;
+            width: 465px;
+            height: 42px;
+        }
+
+        #submitSignIn {
+            color: white;
+            background-color: green;
+            margin: 25px 0px;
+            width: 465px;
+            height: 42px;
+        }
+
+        /* end of the sign and login in code */
+
+
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #ffeedd;
+        }
+
+        .logo-button {
+            float: right;
+
+        }
+
+        .logo {
+            font-family: 'Montez', cursive;
+            font-size: 45px;
+            padding: 10px 10px 0px 10px;
+            color: blue;
+        }
+
+        .logo-title {
+            font-family: 'Ubuntu Mono', cursive;
+            padding: 0px 10px;
+            color: rgb(26, 26, 147);
+        }
+
+        .button {
+            width: 85px;
+            height: 40px;
+            margin: 10px 4px;
+            background-color: blue;
+            color: white;
+        }
+
+        /* from here it is card */
+        .cardContainerCenter {
+            width: 100vw;
+        }
+
+        .cardContainer {
+            width: 100vw;
+            margin: 0vw 8vw;
+            display: grid;
+            column-gap: 10vw;
+            grid-template-columns: 37vw 37vw;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: row;
+            height: 18vh;
+            width: 40vw;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        .cardParagraph{
+            height: 9vh;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            box-shadow: 2px 10px 20px 2px grey;
+        }
+
+        .card2:hover {
+            box-shadow: 2px 8px 20px 1px grey;
+        }
+
+        .card2 {
+            display: flex;
+            flex-direction: row;
+            height: 18vh;
+            width: 40vw;
+            margin: 10px;
+            border-radius: 20px;
+            border: 1px solid rgb(199, 192, 192);
+        }
+
+        .card2> .name{
+            height: 17.6vh;
+
+        }
+        .card2> .content{
+            height: 17.6vh;
+        }
+        /* checking */
+        #card2Paragraph{
+            height: 9vh;
+            overflow: hidden;
+        }
+
+        /* checking end  */
+
+        .name {
+            color: rgb(86, 84, 84);
+            font-size: larger;
+            font: bolder;
+            background-color: white;
+            height: 17vh;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 0px 0px 7px;
+            border-radius: 20px 0px 0px 20px;  
+            font-family: 'Roboto', sans-serif;         
+        }
+
+        .content {
+            background-color: rgb(243, 235, 235);
+            height: 17.8vh;
+            width: 34vw;
+            padding: 10px;
+            border-radius: 0px 20px 20px 0px;
+        }
+
+        #postHeading {
+            color: rgb(134, 129, 129);
+        }
+
+        .content #leftIcon {
+            float: right;
+            cursor: pointer;
+        }
+
+        p {
+            margin: 10px 0px 2px 0px;
+            
+        }
+
+        #ellipsis-h {
+            float: right;
+            cursor: pointer;
+        }
+        #ellipsis-h a{
+            color: black;
+        }
+        .lowerMiddle {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* button of delte post  */
+        #yesButton{
+            color: white;
+            background-color: rgb(49, 235, 49);
+            padding: 10px;
+            margin: 25px 0;
+            width: 100px;
+            border: none;
+            cursor: pointer;
+        }
+        #noButton{
+            color: white;
+            background-color: rgb(233, 75, 75);
+            padding: 10px;
+            margin: 25px 0;
+            width: 100px;
+            border: none;
+            cursor: pointer;
+            float: right;
+        }

@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow : hidden;
+    
+}
+.logo-button{
+    float: right;
+
+}
+.logo{
+    font-family: 'Montez', cursive; 
+    font-size: 45px;
+    padding: 10px 10px 0px 10px;
+    color: blue;
+}
+.logo-title{
+    font-family: 'Ubuntu Mono', cursive;
+    padding: 0px 10px;
+}
+
+.button{
+    width: 85px;
+    height: 40px;
+    margin: 10px 4px;
+    background-color: blue;
+    color: white;
+}
+.mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+.mid-button{
+    background-color: rgb(218, 218, 56);
+    width: 90px;
+    height: 30px;
+    margin: 10px 4px;
+    color: black
+}
+.mid-button a{
+    text-decoration: none;
+    color: black;
+}
+.mid-button a:hover{
+    color: black;
+}
+label{
+    margin: 10px 0px 6px 0px;
+}
+input{
+    width: 465px;
+    height: 42px;
+    padding: 15px;
+}
+#buttonSubmitSignUpForm{
+    color: white;
+    background-color: green;
+    margin: 25px 0px;
+    width: 465px;
+    height: 42px;
+}
+#submitSignIn{
+    color: white;
+    background-color: green;
+    margin: 25px 0px;
+    width: 465px;
+    height: 42px;
+}
+#returnToSignup{
+    display: flex;
+    justify-content: center;
+}
+#returnToSignup a{
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+/* create post */
+
+ #createPost input{
+    width: 46vw;
+    height: 6vh;
+ }
+
+ #createPost textarea{
+    width: 46vw;
+ }
+ textarea{
+    padding: 15px;
+ }
+ #submitPost{
+    color: white;
+    background-color: green;
+    height: 40px;
+    width: 105px;
+    margin: 15px 0px 15px 345px;
+ }
+ 
